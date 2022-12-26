@@ -1,0 +1,171 @@
+------------------------------------------------------------
+-------------------Testing int/solution-c.exe-------------------
+------------------------------------------------------------
+Solution CPU time on fixed tests:
+    Minimum: 382.74300ms = 0.38274s
+    Average: 2414.77234ms = 2.41477s
+    Maximum: 22109.72200ms = 22.10972s
+Solution IO time on fixed tests:
+    Minimum: 388.43633ms = 0.38844s
+    Average: 2421.18160ms = 2.42118s
+    Maximum: 22115.56502ms = 22.11557s
+Solution CPU time on random tests:
+    Minimum: 377.11200ms = 0.37711s
+    Average: 2447.27576ms = 2.44728s
+    Maximum: 31395.19200ms = 31.39519s
+Solution IO time on random tests:
+    Minimum: 380.29115ms = 0.38029s
+    Average: 2450.77172ms = 2.45077s
+    Maximum: 31398.55158ms = 31.39855s
+------------------------------------------------------------
+-------------------Testing int/solution-asm.exe-------------------
+------------------------------------------------------------
+Solution CPU time on fixed tests:
+    Minimum: 255.66471ms = 0.25566s
+    Average: 1804.34322ms = 1.80434s
+    Maximum: 18028.86265ms = 18.02886s
+Solution IO time on fixed tests:
+    Minimum: 261.52295ms = 0.26152s
+    Average: 1810.74808ms = 1.81075s
+    Maximum: 18035.32136ms = 18.03532s
+Solution CPU time on random tests:
+    Minimum: 257.32045ms = 0.25732s
+    Average: 4914.52991ms = 4.91453s
+    Maximum: 123649.31628ms = 123.64932s
+Solution IO time on random tests:
+    Minimum: 260.28769ms = 0.26029s
+    Average: 4917.61370ms = 4.91761s
+    Maximum: 123651.92229ms = 123.65192s
+------------------------------------------------------------
+-------------------Testing int/solution-asm-optimized.exe-------------------
+------------------------------------------------------------
+Solution CPU time on fixed tests:
+    Minimum: 203.77101ms = 0.20377s
+    Average: 1113.78219ms = 1.11378s
+    Maximum: 11043.41172ms = 11.04341s
+Solution IO time on fixed tests:
+    Minimum: 210.61981ms = 0.21062s
+    Average: 1120.00352ms = 1.12000s
+    Maximum: 11049.49730ms = 11.04950s
+Solution CPU time on random tests:
+    Minimum: 205.37449ms = 0.20537s
+    Average: 1718.00944ms = 1.71801s
+    Maximum: 24246.62432ms = 24.24662s
+Solution IO time on random tests:
+    Minimum: 209.03284ms = 0.20903s
+    Average: 1721.15395ms = 1.72115s
+    Maximum: 24250.18530ms = 24.25019s
+------------------------------------------------------------
+-------------------Testing int/solution-c-O0.exe-------------------
+------------------------------------------------------------
+Solution CPU time on fixed tests:
+    Minimum: 386.87800ms = 0.38688s
+    Average: 2427.20527ms = 2.42721s
+    Maximum: 22705.54700ms = 22.70555s
+Solution IO time on fixed tests:
+    Minimum: 391.85446ms = 0.39185s
+    Average: 2432.24189ms = 2.43224s
+    Maximum: 22710.51007ms = 22.71051s
+Solution CPU time on random tests:
+    Minimum: 387.50700ms = 0.38751s
+    Average: 2165.28048ms = 2.16528s
+    Maximum: 24174.18400ms = 24.17418s
+Solution IO time on random tests:
+    Minimum: 390.71302ms = 0.39071s
+    Average: 2168.73427ms = 2.16873s
+    Maximum: 24177.61166ms = 24.17761s
+------------------------------------------------------------
+-------------------Testing int/solution-c-O1.exe-------------------
+------------------------------------------------------------
+Solution CPU time on fixed tests:
+    Minimum: 254.64000ms = 0.25464s
+    Average: 1743.02571ms = 1.74303s
+    Maximum: 17232.97900ms = 17.23298s
+Solution IO time on fixed tests:
+    Minimum: 260.58996ms = 0.26059s
+    Average: 1748.07348ms = 1.74807s
+    Maximum: 17237.62746ms = 17.23763s
+Solution CPU time on random tests:
+    Minimum: 254.80300ms = 0.25480s
+    Average: 490.91794ms = 0.49092s
+    Maximum: 2124.88200ms = 2.12488s
+Solution IO time on random tests:
+    Minimum: 258.04088ms = 0.25804s
+    Average: 494.28444ms = 0.49428s
+    Maximum: 2127.85901ms = 2.12786s
+------------------------------------------------------------
+-------------------Testing int/solution-c-O2.exe-------------------
+------------------------------------------------------------
+Solution CPU time on fixed tests:
+    Minimum: 256.38600ms = 0.25639s
+    Average: 1725.42891ms = 1.72543s
+    Maximum: 16841.52700ms = 16.84153s
+Solution IO time on fixed tests:
+    Minimum: 260.75487ms = 0.26075s
+    Average: 1730.44756ms = 1.73045s
+    Maximum: 16846.29867ms = 16.84630s
+Solution CPU time on random tests:
+    Minimum: 256.47000ms = 0.25647s
+    Average: 1266.30798ms = 1.26631s
+    Maximum: 11120.34200ms = 11.12034s
+Solution IO time on random tests:
+    Minimum: 259.98050ms = 0.25998s
+    Average: 1269.55113ms = 1.26955s
+    Maximum: 11123.86110ms = 11.12386s
+------------------------------------------------------------
+-------------------Testing int/solution-c-O3.exe-------------------
+------------------------------------------------------------
+Solution CPU time on fixed tests:
+    Minimum: 251.03900ms = 0.25104s
+    Average: 1730.60437ms = 1.73060s
+    Maximum: 16758.02500ms = 16.75802s
+Solution IO time on fixed tests:
+    Minimum: 255.72588ms = 0.25573s
+    Average: 1735.96879ms = 1.73597s
+    Maximum: 16762.81146ms = 16.76281s
+Solution CPU time on random tests:
+    Minimum: 251.53900ms = 0.25154s
+    Average: 1014.44526ms = 1.01445s
+    Maximum: 8817.23900ms = 8.81724s
+Solution IO time on random tests:
+    Minimum: 254.65433ms = 0.25465s
+    Average: 1017.81770ms = 1.01782s
+    Maximum: 8820.22355ms = 8.82022s
+------------------------------------------------------------
+-------------------Testing int/solution-c-Ofast.exe-------------------
+------------------------------------------------------------
+Solution CPU time on fixed tests:
+    Minimum: 137.70700ms = 0.13771s
+    Average: 1165.11722ms = 1.16512s
+    Maximum: 11741.28100ms = 11.74128s
+Solution IO time on fixed tests:
+    Minimum: 142.24462ms = 0.14224s
+    Average: 1170.08860ms = 1.17009s
+    Maximum: 11746.22119ms = 11.74622s
+Solution CPU time on random tests:
+    Minimum: 138.83600ms = 0.13884s
+    Average: 263.53860ms = 0.26354s
+    Maximum: 961.74400ms = 0.96174s
+Solution IO time on random tests:
+    Minimum: 141.55217ms = 0.14155s
+    Average: 266.79450ms = 0.26679s
+    Maximum: 964.77275ms = 0.96477s
+------------------------------------------------------------
+-------------------Testing int/solution-c-Os.exe-------------------
+------------------------------------------------------------
+Solution CPU time on fixed tests:
+    Minimum: 253.45200ms = 0.25345s
+    Average: 6004.11626ms = 6.00412s
+    Maximum: 87796.03400ms = 87.79603s
+Solution IO time on fixed tests:
+    Minimum: 258.45693ms = 0.25846s
+    Average: 6009.34857ms = 6.00935s
+    Maximum: 87801.20445ms = 87.80120s
+Solution CPU time on random tests:
+    Minimum: 251.00000ms = 0.25100s
+    Average: 2487.26408ms = 2.48726s
+    Maximum: 34956.32500ms = 34.95632s
+Solution IO time on random tests:
+    Minimum: 254.17854ms = 0.25418s
+    Average: 2490.49547ms = 2.49050s
+    Maximum: 34959.19475ms = 34.95919s

@@ -1,0 +1,22 @@
+Books WorkTime
+ID Amount
+ID Amount
+ID Amount
+
+Readers
+ID ID ID
+
+
+Events
+
+Time ReaderID BooksAmount
+BookID ReturnTime
+BookID ReturnTime
+
+Time ReaderID BooksAmount
+BookID ReturnTime
+BookID ReturnTime
+
+Time ReaderID BooksAmount
+BookID ReturnTime
+BookID ReturnTime

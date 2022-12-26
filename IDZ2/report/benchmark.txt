@@ -1,0 +1,245 @@
+ttpo100ajiex@TTPO100AJIEX:/mnt/f/programming/IDZ2$ npm run benchmark
+
+> idz2@1.0.0 benchmark
+> node testing/benchmark.js
+
+------------------------------------------------------------
+-------------------Benchmarking int/solution-c.exe-------------------
+------------------------------------------------------------
+String length: 10.
+    Average solution CPU time: 0.00050ms = 0.00000s
+    Average IO CPU time: 6.19178ms = 0.00619s
+String length: 100.
+    Average solution CPU time: 0.00140ms = 0.00000s
+    Average IO CPU time: 5.58783ms = 0.00559s
+String length: 1000.
+    Average solution CPU time: 0.00940ms = 0.00001s
+    Average IO CPU time: 6.20936ms = 0.00621s
+String length: 10000.
+    Average solution CPU time: 0.07987ms = 0.00008s
+    Average IO CPU time: 6.37799ms = 0.00638s
+String length: 100000.
+    Average solution CPU time: 0.75620ms = 0.00076s
+    Average IO CPU time: 6.61989ms = 0.00662s
+String length: 1000000.
+    Average solution CPU time: 7.14940ms = 0.00715s
+    Average IO CPU time: 14.06853ms = 0.01407s
+String length: 10000000.
+    Average solution CPU time: 72.69647ms = 0.07270s
+    Average IO CPU time: 92.25545ms = 0.09226s
+String length: 100000000.
+    Average solution CPU time: 709.52500ms = 0.70952s
+    Average IO CPU time: 838.95403ms = 0.83895s
+String length: 1073741824.
+    Average solution CPU time: 7542.86380ms = 7.54286s
+    Average IO CPU time: 11691.45760ms = 11.69146s
+------------------------------------------------------------
+-------------------Benchmarking int/solution-c-O0.exe-------------------
+------------------------------------------------------------
+String length: 10.
+    Average solution CPU time: 0.00110ms = 0.00000s
+    Average IO CPU time: 6.56319ms = 0.00656s
+String length: 100.
+    Average solution CPU time: 0.00147ms = 0.00000s
+    Average IO CPU time: 5.77642ms = 0.00578s
+String length: 1000.
+    Average solution CPU time: 0.00933ms = 0.00001s
+    Average IO CPU time: 5.87811ms = 0.00588s
+String length: 10000.
+    Average solution CPU time: 0.07927ms = 0.00008s
+    Average IO CPU time: 5.84077ms = 0.00584s
+String length: 100000.
+    Average solution CPU time: 0.74473ms = 0.00074s
+    Average IO CPU time: 6.81655ms = 0.00682s
+String length: 1000000.
+    Average solution CPU time: 7.31973ms = 0.00732s
+    Average IO CPU time: 14.91512ms = 0.01492s
+String length: 10000000.
+    Average solution CPU time: 72.43260ms = 0.07243s
+    Average IO CPU time: 91.54312ms = 0.09154s
+String length: 100000000.
+    Average solution CPU time: 710.22690ms = 0.71023s
+    Average IO CPU time: 839.65138ms = 0.83965s
+String length: 1073741824.
+    Average solution CPU time: 7589.07320ms = 7.58907s
+    Average IO CPU time: 11752.25233ms = 11.75225s
+------------------------------------------------------------
+-------------------Benchmarking int/solution-c-O1.exe-------------------
+------------------------------------------------------------
+String length: 10.
+    Average solution CPU time: 0.00040ms = 0.00000s
+    Average IO CPU time: 6.44295ms = 0.00644s
+String length: 100.
+    Average solution CPU time: 0.00060ms = 0.00000s
+    Average IO CPU time: 6.31813ms = 0.00632s
+String length: 1000.
+    Average solution CPU time: 0.00167ms = 0.00000s
+    Average IO CPU time: 6.58095ms = 0.00658s
+String length: 10000.
+    Average solution CPU time: 0.01093ms = 0.00001s
+    Average IO CPU time: 6.38748ms = 0.00639s
+String length: 100000.
+    Average solution CPU time: 0.09753ms = 0.00010s
+    Average IO CPU time: 6.71622ms = 0.00672s
+String length: 1000000.
+    Average solution CPU time: 0.93540ms = 0.00094s
+    Average IO CPU time: 8.31301ms = 0.00831s
+String length: 10000000.
+    Average solution CPU time: 9.20627ms = 0.00921s
+    Average IO CPU time: 24.57957ms = 0.02458s
+String length: 100000000.
+    Average solution CPU time: 94.18470ms = 0.09418s
+    Average IO CPU time: 202.06974ms = 0.20207s
+String length: 1073741824.
+    Average solution CPU time: 972.56880ms = 0.97257s
+    Average IO CPU time: 5179.69610ms = 5.17970s
+------------------------------------------------------------
+-------------------Benchmarking int/solution-c-O2.exe-------------------
+------------------------------------------------------------
+String length: 10.
+    Average solution CPU time: 0.00040ms = 0.00000s
+    Average IO CPU time: 6.59395ms = 0.00659s
+String length: 100.
+    Average solution CPU time: 0.00047ms = 0.00000s
+    Average IO CPU time: 5.76087ms = 0.00576s
+String length: 1000.
+    Average solution CPU time: 0.00173ms = 0.00000s
+    Average IO CPU time: 6.05365ms = 0.00605s
+String length: 10000.
+    Average solution CPU time: 0.01040ms = 0.00001s
+    Average IO CPU time: 5.87012ms = 0.00587s
+String length: 100000.
+    Average solution CPU time: 0.09607ms = 0.00010s
+    Average IO CPU time: 5.87910ms = 0.00588s
+String length: 1000000.
+    Average solution CPU time: 0.94887ms = 0.00095s
+    Average IO CPU time: 8.46201ms = 0.00846s
+String length: 10000000.
+    Average solution CPU time: 9.37867ms = 0.00938s
+    Average IO CPU time: 26.17086ms = 0.02617s
+String length: 100000000.
+    Average solution CPU time: 94.89690ms = 0.09490s
+    Average IO CPU time: 194.99694ms = 0.19500s
+String length: 1073741824.
+    Average solution CPU time: 994.19160ms = 0.99419s
+    Average IO CPU time: 4971.41532ms = 4.97142s
+------------------------------------------------------------
+-------------------Benchmarking int/solution-c-O3.exe-------------------
+------------------------------------------------------------
+String length: 10.
+    Average solution CPU time: 0.00040ms = 0.00000s
+    Average IO CPU time: 5.93682ms = 0.00594s
+String length: 100.
+    Average solution CPU time: 0.00060ms = 0.00000s
+    Average IO CPU time: 5.91020ms = 0.00591s
+String length: 1000.
+    Average solution CPU time: 0.00173ms = 0.00000s
+    Average IO CPU time: 5.60279ms = 0.00560s
+String length: 10000.
+    Average solution CPU time: 0.01040ms = 0.00001s
+    Average IO CPU time: 5.97562ms = 0.00598s
+String length: 100000.
+    Average solution CPU time: 0.09767ms = 0.00010s
+    Average IO CPU time: 5.85869ms = 0.00586s
+String length: 1000000.
+    Average solution CPU time: 0.93327ms = 0.00093s
+    Average IO CPU time: 8.91745ms = 0.00892s
+String length: 10000000.
+    Average solution CPU time: 9.30500ms = 0.00931s
+    Average IO CPU time: 25.07386ms = 0.02507s
+String length: 100000000.
+    Average solution CPU time: 94.11340ms = 0.09411s
+    Average IO CPU time: 196.42968ms = 0.19643s
+String length: 1073741824.
+    Average solution CPU time: 965.45320ms = 0.96545s
+    Average IO CPU time: 4913.15656ms = 4.91316s
+------------------------------------------------------------
+-------------------Benchmarking int/solution-c-Ofast.exe-------------------
+------------------------------------------------------------
+String length: 10.
+    Average solution CPU time: 0.00040ms = 0.00000s
+    Average IO CPU time: 6.02388ms = 0.00602s
+String length: 100.
+    Average solution CPU time: 0.00047ms = 0.00000s
+    Average IO CPU time: 5.78539ms = 0.00579s
+String length: 1000.
+    Average solution CPU time: 0.00167ms = 0.00000s
+    Average IO CPU time: 5.80406ms = 0.00580s
+String length: 10000.
+    Average solution CPU time: 0.01080ms = 0.00001s
+    Average IO CPU time: 6.01782ms = 0.00602s
+String length: 100000.
+    Average solution CPU time: 0.10287ms = 0.00010s
+    Average IO CPU time: 5.76866ms = 0.00577s
+String length: 1000000.
+    Average solution CPU time: 1.00500ms = 0.00101s
+    Average IO CPU time: 7.73778ms = 0.00774s
+String length: 10000000.
+    Average solution CPU time: 10.06220ms = 0.01006s
+    Average IO CPU time: 26.49882ms = 0.02650s
+String length: 100000000.
+    Average solution CPU time: 101.36160ms = 0.10136s
+    Average IO CPU time: 202.36826ms = 0.20237s
+String length: 1073741824.
+    Average solution CPU time: 1041.10400ms = 1.04110s
+    Average IO CPU time: 4969.54281ms = 4.96954s
+------------------------------------------------------------
+-------------------Benchmarking int/solution-c-Os.exe-------------------
+------------------------------------------------------------
+String length: 10.
+    Average solution CPU time: 0.00030ms = 0.00000s
+    Average IO CPU time: 5.79636ms = 0.00580s
+String length: 100.
+    Average solution CPU time: 0.00053ms = 0.00000s
+    Average IO CPU time: 5.75900ms = 0.00576s
+String length: 1000.
+    Average solution CPU time: 0.00233ms = 0.00000s
+    Average IO CPU time: 5.68887ms = 0.00569s
+String length: 10000.
+    Average solution CPU time: 0.01427ms = 0.00001s
+    Average IO CPU time: 5.82774ms = 0.00583s
+String length: 100000.
+    Average solution CPU time: 0.13960ms = 0.00014s
+    Average IO CPU time: 6.18448ms = 0.00618s
+String length: 1000000.
+    Average solution CPU time: 1.44613ms = 0.00145s
+    Average IO CPU time: 8.73792ms = 0.00874s
+String length: 10000000.
+    Average solution CPU time: 13.96513ms = 0.01397s
+    Average IO CPU time: 29.48840ms = 0.02949s
+String length: 100000000.
+    Average solution CPU time: 139.20210ms = 0.13920s
+    Average IO CPU time: 239.81731ms = 0.23982s
+String length: 1073741824.
+    Average solution CPU time: 1459.08160ms = 1.45908s
+    Average IO CPU time: 5842.59496ms = 5.84259s
+------------------------------------------------------------
+-------------------Benchmarking int/solution-asm.exe-------------------
+------------------------------------------------------------
+String length: 10.
+    Average solution CPU time: 0.00030ms = 0.00000s
+    Average IO CPU time: 5.69149ms = 0.00569s
+String length: 100.
+    Average solution CPU time: 0.00099ms = 0.00000s
+    Average IO CPU time: 5.51394ms = 0.00551s
+String length: 1000.
+    Average solution CPU time: 0.00749ms = 0.00001s
+    Average IO CPU time: 5.64015ms = 0.00564s
+String length: 10000.
+    Average solution CPU time: 0.06546ms = 0.00007s
+    Average IO CPU time: 5.72449ms = 0.00572s
+String length: 100000.
+    Average solution CPU time: 0.63072ms = 0.00063s
+    Average IO CPU time: 6.64423ms = 0.00664s
+String length: 1000000.
+    Average solution CPU time: 5.81754ms = 0.00582s
+    Average IO CPU time: 12.39424ms = 0.01239s
+String length: 10000000.
+    Average solution CPU time: 60.80541ms = 0.06081s
+    Average IO CPU time: 79.40503ms = 0.07941s
+String length: 100000000.
+    Average solution CPU time: 585.05759ms = 0.58506s
+    Average IO CPU time: 690.36395ms = 0.69036s
+String length: 1073741824.
+    Average solution CPU time: 6050.86626ms = 6.05087s
+    Average IO CPU time: 13317.00516ms = 13.31701s

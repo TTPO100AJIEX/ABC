@@ -1,0 +1,1 @@
+gcc -masm=intel -Wall -fno-asynchronous-unwind-tables -fcf-protection=none -S 4/solution.c -o 4/solution.s

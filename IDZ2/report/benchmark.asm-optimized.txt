@@ -1,0 +1,35 @@
+ttpo100ajiex@TTPO100AJIEX:/mnt/f/programming/IDZ2$ npm run benchmark
+
+> idz2@1.0.0 benchmark
+> node testing/benchmark.js
+
+------------------------------------------------------------
+-------------------Benchmarking int/solution-asm_optimized.exe-------------------
+------------------------------------------------------------
+String length: 10.
+    Average solution CPU time: 0.00024ms = 0.00000s
+    Average IO CPU time: 5.81891ms = 0.00582s
+String length: 100.
+    Average solution CPU time: 0.00036ms = 0.00000s
+    Average IO CPU time: 5.60301ms = 0.00560s
+String length: 1000.
+    Average solution CPU time: 0.00148ms = 0.00000s
+    Average IO CPU time: 6.26794ms = 0.00627s
+String length: 10000.
+    Average solution CPU time: 0.01126ms = 0.00001s
+    Average IO CPU time: 6.11078ms = 0.00611s
+String length: 100000.
+    Average solution CPU time: 0.11263ms = 0.00011s
+    Average IO CPU time: 6.13865ms = 0.00614s
+String length: 1000000.
+    Average solution CPU time: 1.02493ms = 0.00102s
+    Average IO CPU time: 8.16133ms = 0.00816s
+String length: 10000000.
+    Average solution CPU time: 10.28244ms = 0.01028s
+    Average IO CPU time: 28.17614ms = 0.02818s
+String length: 100000000.
+    Average solution CPU time: 100.33475ms = 0.10033s
+    Average IO CPU time: 205.65502ms = 0.20566s
+String length: 1073741824.
+    Average solution CPU time: 1048.16872ms = 1.04817s
+    Average IO CPU time: 8360.04547ms = 8.36005s

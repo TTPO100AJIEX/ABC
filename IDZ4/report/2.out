@@ -1,0 +1,16 @@
+1.00005s: reader 1 takes book 2
+1.00021s: reader 2 takes book 4
+1.00028s: reader 2 takes book 2
+3.00007s: reader 3 takes book 3
+3.00013s: reader 3 takes book 4
+3.00037s: reader 2 returns book 2
+4.00029s: reader 3 returns book 4
+4.00033s: reader 2 returns book 4
+5.00006s: reader 1 takes book 4
+5.00018s: reader 1 takes book 2
+5.00021s: reader 1 takes book 1
+5.00024s: reader 3 returns book 3
+5.00026s: reader 1 returns book 2
+7.00036s: reader 1 returns book 4
+7.00041s: reader 1 returns book 2
+7.00042s: reader 1 returns book 1

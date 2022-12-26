@@ -1,0 +1,66 @@
+{
+    "name": "idz2",
+    "type": "module",
+    "version": "1.0.0",
+    "description": "",
+    "author": "TTPO100AJIEX",
+    "license": "MIT",
+    "repository":
+    {
+        "type": "git",
+        "url": "git+https://github.com/TTPO100AJIEX/IDZ2.git"
+    },
+    "scripts":
+    {
+        "build_c": "gcc c/solution.c -o int/solution-c.exe",
+        "build_c_O0": "gcc -O0 c/solution.c -o int/solution-c-O0.exe",
+        "build_c_O1": "gcc -O1 c/solution.c -o int/solution-c-O1.exe",
+        "build_c_O2": "gcc -O2 c/solution.c -o int/solution-c-O2.exe",
+        "build_c_O3": "gcc -O3 c/solution.c -o int/solution-c-O3.exe",
+        "build_c_Ofast": "gcc -Ofast c/solution.c -o int/solution-c-Ofast.exe",
+        "build_c_Os": "gcc -Os c/solution.c -o int/solution-c-Os.exe",
+        "build_c_all": "npm run build_c && npm run build_c_O0 && npm run build_c_O1 && npm run build_c_O2 && npm run build_c_O3 && npm run build_c_Ofast && npm run build_c_Os",
+
+        "run_c": "./int/solution-c.exe 0 0",
+        "c": "npm run build_c && npm run run_c",
+
+
+        "get_assembly": "gcc -masm=intel -Wall -fno-asynchronous-unwind-tables -fcf-protection=none -S c/solution.c -o int/solution.s",
+        "get_assembly_O0": "gcc -O0 -masm=intel -Wall -fno-asynchronous-unwind-tables -fcf-protection=none -S c/solution.c -o int/solution-O0.s",
+        "get_assembly_O1": "gcc -O1 -masm=intel -Wall -fno-asynchronous-unwind-tables -fcf-protection=none -S c/solution.c -o int/solution-O1.s",
+        "get_assembly_O2": "gcc -O2 -masm=intel -Wall -fno-asynchronous-unwind-tables -fcf-protection=none -S c/solution.c -o int/solution-O2.s",
+        "get_assembly_O3": "gcc -O3 -masm=intel -Wall -fno-asynchronous-unwind-tables -fcf-protection=none -S c/solution.c -o int/solution-O3.s",
+        "get_assembly_Ofast": "gcc -Ofast -masm=intel -Wall -fno-asynchronous-unwind-tables -fcf-protection=none -S c/solution.c -o int/solution-Ofast.s",
+        "get_assembly_Os": "gcc -Os -masm=intel -Wall -fno-asynchronous-unwind-tables -fcf-protection=none -S c/solution.c -o int/solution-Os.s",
+        "get_assembly_all": "npm run get_assembly && npm run get_assembly_O0 && npm run get_assembly_O1 && npm run get_assembly_O2 && npm run get_assembly_O3 && npm run get_assembly_Ofast && npm run get_assembly_Os",
+
+
+        "compile_asm_main": "as asm/main.asm -o int/asm-main.o",
+        "compile_asm_lib": "as asm/lib.asm -o int/asm-lib.o",
+        "compile_asm_input": "as asm/input.asm -o int/asm-input.o",
+        "compile_asm_solve": "as asm/solve.asm -o int/asm-solve.o",
+        "compile_asm_output": "as asm/output.asm -o int/asm-output.o",
+        "compile_asm": "npm run compile_asm_main && npm run compile_asm_lib && npm run compile_asm_input && npm run compile_asm_solve && npm run compile_asm_output",
+        "link_asm": "ld int/asm-main.o int/asm-lib.o int/asm-input.o int/asm-solve.o int/asm-output.o -o int/solution-asm.exe",
+        "build_asm": "npm run compile_asm && npm run link_asm",
+
+        "run_asm": "./int/solution-asm.exe 0 0",
+        "asm": "npm run build_asm && ./int/solution-asm.exe 0 0",
+
+
+        "compile_asm_solve_optimized": "as asm/solve_optimized.asm -o int/asm-solve_optimized.o",
+        "compile_asm_optimized": "npm run compile_asm_main && npm run compile_asm_lib && npm run compile_asm_input && npm run compile_asm_solve_optimized && npm run compile_asm_output",
+        "link_asm_optimized": "ld int/asm-main.o int/asm-lib.o int/asm-input.o int/asm-solve_optimized.o int/asm-output.o -o int/solution-asm_optimized.exe",
+        "build_asm_optimized": "npm run compile_asm_optimized && npm run link_asm_optimized",
+        "run_asm_optimized": "./int/solution-asm_optimized.exe 0 0",
+        "asm_optimized": "npm run build_asm && ./int/solution-asm_optimized.exe 0 0",
+
+
+        "build_all": "npm run build_c_all && npm run build_asm && npm run build_asm_optimized",
+
+        "gen_tests": "node testing/gen.js",
+        "test_stdin": "node testing/test_stdin.js",
+        "test_file": "node testing/test_file.js",
+        "benchmark": "node testing/benchmark.js"
+    }
+}

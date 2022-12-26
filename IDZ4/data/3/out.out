@@ -1,0 +1,66 @@
+1s: reader 1 takes book 2          // library: (1, 1, 1, 2)
+1s: reader 1 takes book 3          // library: (1, 1, 0, 1)
+1s: reader 1 takes book 4          // library: (1, 1, 0, 1)
+2s: reader 2 takes book 1          // library: (0, 1, 1, 2)
+2s: reader 2 takes book 2          // library: (0, 0, 0, 1)
+2s: reader 2 requests book 3       // library: (0, 0, 0, 1); waiting: (-; -; 2; -)
+3s: reader 3 requests book 1       // library: (0, 0, 0, 1); waiting: (3; -; 2; -)
+3s: reader 3 requests book 2       // library: (0, 0, 0, 1); waiting: (3; 3; 2; -)
+3s: reader 3 takes book 4          // library: (0, 0, 0, 0)
+4s: reader 4 requests book 1       // library: (0, 0, 0, 0); waiting: (3+4; 3; 2;   -)
+4s: reader 4 requests book 3       // library: (0, 0, 0, 0); waiting: (3+4; 3; 2+4; -)
+4s: reader 4 requests book 4       // library: (0, 0, 0, 0); waiting: (3+4; 3; 2+4; 4)
+
+5s: reader 1 returns book 2        // library: (0, 1, 0, 0); waiting: (3+4; 3; 2+4; 4)
+5s: reader 3 takes book 2          // library: (0, 0, 0, 0); waiting: (3+4; -; 2+4; 4); new_return_time = 14
+6s: reader 1 returns book 3        // library: (0, 0, 1, 0); waiting: (3+4; -; 2+4; 4)
+6s: reader x takes book 3          // library: (0, 0, 0, 0); waiting: (3+4; -; -;   4); x := 2/4 - id of the reader who was in time to take the book; new_return_time = (x == 2 ? 14 : 19)
+6s: reader !x requests book 3      // library: (0, 0, 0, 0); waiting: (3+4; -; !x;  4)
+7s: reader 1 returns book 4        // library: (0, 0, 0, 1); waiting: (3+4; -; !x;  4)
+7s: reader 4 takes book 4          // library: (0, 0, 0, 0); waiting: (3+4; -; !x;  -); new_return_time = 19
+
+8s: reader 2 returns book 1        // library: (1, 0, 0, 0); waiting: (3+4; -; !x;  -)
+8s: reader y takes book 1          // library: (0, 0, 0, 0); waiting: (-;   -; !x;  -); y := 3/4 - id of the reader who was in time to take the book; new_return_time = (y == 3 ? 16 : 18)
+8s: reader !y requests book 1      // library: (0, 0, 0, 0); waiting: (!y;  -; !x;  -)
+9s: reader 2 returns book 2        // library: (0, 1, 0, 0); waiting: (!y;  -; !x;  -)
+
+13s: reader 3 returns book 4       // library: (0, 0, 0, 1); waiting: (!y;  -;  !x;  -)
+14s: reader 3 returns book 2       // library: (0, 2, 0, 1); waiting: (!y;  -;  !x;  -)
+...
+there may be 4 scenarios depending on x and y
+
+----------- suppose x = 2, y = 3 -----------
+14s: reader 2 returns book 3       // library: (0, 2, 0, 1); waiting: (!y;  -;  !x;  -)
+14s: reader 4 takes book 3         // library: (0, 2, 0, 1); waiting: (!y;  -;  -;   -); new_return_time = 25
+16s: reader 3 returns book 1       // library: (1, 2, 0, 1); waiting: (!y;  -;  -;   -); new_return_time = 25
+16s: reader 4 takes book 1         // library: (0, 2, 0, 1); waiting: (-;   -;  -;   -); new_return_time = 26
+19s: reader 4 returns book 4       // library: (0, 2, 0, 2);
+25s: reader 4 returns book 3       // library: (0, 2, 1, 2);
+26s: reader 4 returns book 1       // library: (1, 2, 1, 2);
+
+----------- suppose x = 2, y = 4 -----------
+14s: reader 2 returns book 3       // library: (0, 2, 0, 1); waiting: (!y;  -;  !x;  -)
+14s: reader 4 takes book 3         // library: (0, 2, 0, 1); waiting: (!y;  -;  -;   -); new_return_time = 25
+18s: reader 4 returns book 1       // library: (1, 2, 0, 1); waiting: (!y;  -;  -;   -); new_return_time = 25
+18s: reader 3 takes book 1         // library: (0, 2, 0, 1); waiting: (-;   -;  -;   -); new_return_time = 26
+19s: reader 4 returns book 4       // library: (0, 2, 0, 2);
+25s: reader 4 returns book 3       // library: (0, 2, 1, 2);
+26s: reader 3 returns book 1       // library: (1, 2, 1, 2);
+
+----------- suppose x = 4, y = 3 -----------
+16s: reader 3 returns book 1       // library: (1, 2, 0, 1); waiting: (!y;  -;  !x;  -)
+16s: reader 4 takes book 1         // library: (0, 2, 0, 1); waiting: (-;   -;  !x;  -); new_return_time = 26
+19s: reader 4 returns book 3       // library: (0, 2, 1, 1); waiting: (-;   -;  !x;  -);
+19s: reader 2 takes book 3         // library: (0, 2, 0, 1); waiting: (-;   -;  -;   -); new_return_time = 27
+19s: reader 4 returns book 4       // library: (0, 2, 0, 2);
+26s: reader 4 returns book 1       // library: (1, 2, 0, 2);
+27s: reader 2 returns book 3       // library: (1, 2, 1, 2);
+
+----------- suppose x = 4, y = 4 -----------
+18s: reader 4 returns book 1       // library: (1, 2, 0, 1); waiting: (!y;  -;  !x;  -)
+18s: reader 3 takes book 1         // library: (0, 2, 0, 1); waiting: (-;   -;  !x;  -); new_return_time = 26
+19s: reader 4 returns book 3       // library: (0, 2, 1, 1); waiting: (-;   -;  !x;  -)
+19s: reader 2 takes book 3         // library: (0, 2, 0, 1); waiting: (-;   -;  -;   -); new_return_time = 27
+19s: reader 4 returns book 4       // library: (0, 2, 0, 2);
+26s: reader 3 returns book 1       // library: (1, 2, 0, 2);
+27s: reader 2 returns book 3       // library: (1, 2, 1, 2);

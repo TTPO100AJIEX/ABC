@@ -1,0 +1,31 @@
+// Just take and return books
+
+
+4 15   // 4 books with sequential IDs 1-4, each with 1 or 2 copies. The library works for 15 seconds
+1 1
+2 2
+3 1
+4 2
+
+3      // 3 readers with sequential IDs 1-3
+1 2 3
+
+
+4      // 4 actions of taking a book
+
+1 1 1  // at time 1 the first reader wants to take one book
+1 2    // he wants to take the first book for 2 seconds (return_time = 3)
+
+2 2 2  // at time 2 the second reader wants to take two books
+2 2    // he wants to take the second book for 2 seconds (return_time = 4)
+4 4    // he wants to take the fourth book for 4 seconds (return_time = 6)
+
+5 3 3  // at time 5 the third reader wants to take three books
+2 2    // he wants to take the second book for 2 seconds (return_time = 7)
+3 4    // he wants to take the third book for 4 seconds (return_time = 9)
+4 6    // he wants to take the fourth book for 7 seconds (return_time = 11)
+
+8 1 3  // at time 8 the first reader wants to take three books
+2 2    // he wants to take the second book for 2 seconds (return_time = 10)
+1 5    // he wants to take the first book for 4 seconds (return_time = 13)
+2 6    // he wants to take the second book (another copy) for 5 seconds (return_time = 14)

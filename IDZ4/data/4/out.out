@@ -1,0 +1,81 @@
+1.00006s: reader 4 takes book 4     // library: (1, 2, 1, 1);
+1.00020s: reader 1 takes book 1     // library: (0, 2, 1, 1);
+1.00023s: reader 3 takes book 3     // library: (0, 2, 0, 1);
+1.00024s: reader 2 takes book 2     // library: (0, 1, 0, 1);
+2.00022s: reader 4 requests book 3
+2.00031s: reader 4 requests book 1
+2.00034s: reader 1 requests book 3
+2.00034s: reader 1 takes book 2     // library: (0, 0, 0, 1);
+2.00037s: reader 3 takes book 4     // library: (0, 0, 0, 0);
+2.00038s: reader 3 requests book 2
+2.00040s: reader 2 requests book 4
+2.00040s: reader 2 requests book 1
+3.00010s: reader 4 requests book 4
+3.00017s: reader 4 requests book 2
+3.00018s: reader 4 requests book 1
+3.00019s: reader 2 requests book 4
+3.00019s: reader 2 requests book 3
+3.00019s: reader 2 requests book 2
+3.00020s: reader 3 requests book 4
+3.00020s: reader 3 requests book 2
+3.00020s: reader 3 requests book 1
+3.00020s: reader 1 requests book 4
+3.00020s: reader 1 requests book 2
+3.00021s: reader 1 requests book 1
+3.00023s: reader 2 returns book 2   // library: (0, 1, 0, 0);
+3.00029s: reader 1 takes book 2     // library: (0, 0, 0, 0);
+3.00032s: reader 2 requests book 2
+3.00033s: reader 4 requests book 2
+3.00035s: reader 3 requests book 2
+4.00022s: reader 1 returns book 1   // library: (1, 0, 0, 0);
+4.00031s: reader 2 takes book 1     // library: (0, 0, 0, 0);
+4.00033s: reader 3 requests book 1
+4.00035s: reader 1 requests book 1
+4.00047s: reader 4 requests book 1
+5.00013s: reader 4 returns book 4   // library: (0, 0, 0, 1);
+5.00035s: reader 4 takes book 4     // library: (0, 0, 0, 0);
+5.00039s: reader 1 requests book 4
+5.00041s: reader 3 requests book 4
+5.00042s: reader 2 requests book 4
+6.00025s: reader 3 returns book 3   // library: (0, 0, 1, 0);
+6.00035s: reader 1 takes book 3     // library: (0, 0, 0, 0);
+6.00037s: reader 4 requests book 3
+6.00039s: reader 3 returns book 4   // library: (0, 0, 0, 1);
+6.00045s: reader 2 requests book 3
+6.00049s: reader 2 returns book 1   // library: (1, 0, 0, 1);
+6.00052s: reader 2 takes book 4     // library: (1, 0, 0, 0);
+6.00055s: reader 3 requests book 4
+6.00056s: reader 1 requests book 4
+6.00057s: reader 3 takes book 1     // library: (0, 0, 0, 0);
+6.00057s: reader 1 requests book 1
+6.00058s: reader 4 requests book 1
+8.00050s: reader 4 returns book 4   // library: (0, 0, 0, 1);
+8.00058s: reader 1 returns book 2   // library: (0, 1, 0, 1);
+8.00060s: reader 3 takes book 4     // library: (0, 1, 0, 0);
+8.00062s: reader 1 requests book 4
+8.00064s: reader 3 takes book 2     // library: (0, 0, 0, 0);
+8.00066s: reader 4 requests book 2
+8.00066s: reader 2 requests book 2
+9.00035s: reader 1 returns book 2   // library: (0, 1, 0, 0);
+9.00043s: reader 1 returns book 3   // library: (0, 1, 1, 0);
+9.00044s: reader 4 takes book 2     // library: (0, 0, 1, 0);
+9.00045s: reader 4 takes book 3     // library: (0, 0, 0, 0);
+9.00049s: reader 2 requests book 2
+9.00051s: reader 2 requests book 3
+10.00045s: reader 4 returns book 2   // library: (0, 1, 0, 0);
+10.00059s: reader 2 takes book 2     // library: (0, 0, 0, 0);
+10.00064s: reader 3 returns book 2   // library: (0, 1, 0, 0);
+11.00063s: reader 3 returns book 1   // library: (1, 1, 0, 0);
+11.00072s: reader 1 takes book 1     // library: (0, 1, 0, 0);
+11.00077s: reader 4 requests book 1
+14.00055s: reader 2 returns book 4   // library: (0, 1, 0, 1);
+14.00062s: reader 2 returns book 2   // library: (0, 2, 0, 1);
+14.00068s: reader 1 takes book 4     // library: (0, 2, 0, 0);
+14.00075s: reader 1 returns book 1   // library: (1, 2, 0, 0);
+14.00080s: reader 4 takes book 1     // library: (0, 2, 0, 0);
+18.00046s: reader 4 returns book 3   // library: (0, 2, 1, 0);
+18.00054s: reader 2 takes book 3     // library: (0, 2, 0, 0);
+18.00060s: reader 3 returns book 4   // library: (0, 2, 0, 1);
+19.00056s: reader 2 returns book 3   // library: (0, 2, 1, 1);
+21.00084s: reader 4 returns book 1   // library: (1, 2, 1, 1);
+23.00073s: reader 1 returns book 4   // library: (1, 2, 1, 2);
